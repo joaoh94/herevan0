@@ -1,0 +1,63 @@
+[2018-09-19 20:05:05] [INFO]: O usuário ID: 1 acabou de ser inserido na tabela: Empresa 
+[2018-09-19 20:05:10] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação 
+[2018-10-03 20:21:39] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação 
+[2018-10-04 00:51:13] [WARNING]: O e-mail  tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-10-04 00:51:45] [WARNING]: O e-mail dasda tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-10-04 00:51:52] [WARNING]: O e-mail dsada tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-10-04 00:52:09] [WARNING]: O e-mail dsada tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-10-04 00:52:16] [WARNING]: O e-mail dasd tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-10-04 00:52:22] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-10-04 00:58:02] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-10-22 20:45:03] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-10-22 20:52:29] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-10-24 21:01:12] [INFO]: O usuário (ID: 23) acabou de realizar o login na aplicação
+[2018-10-24 21:42:20] [INFO]: O usuário (ID: 23) acabou de realizar o login na aplicação
+[2018-10-26 20:03:07] [INFO]: O usuário (ID: 23) acabou de realizar o login na aplicação
+[2018-10-26 21:17:48] [INFO]: O usuário (ID: 23) acabou de realizar o login na aplicação
+[2018-10-29 19:39:23] [INFO]: O usuário (ID: 23) acabou de realizar o login na aplicação
+[2018-10-29 21:54:39] [WARNING]: O e-mail teste@teste.teste tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-10-29 21:54:49] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-10-31 19:48:43] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-10-31 20:26:38] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-01 00:05:01] [INFO]: O usuário (ID: 2) acabou de realizar o login na aplicação
+[2018-11-01 00:08:04] [WARNING]: O e-mail okpokpok tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-01 00:09:08] [INFO]: O usuário (ID: 2) acabou de realizar o login na aplicação
+[2018-11-02 00:46:35] [WARNING]: O e-mail teste@teste.teste tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 00:46:41] [WARNING]: O e-mail teste@teste.teste tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 00:46:47] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:11:08] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:16:44] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:17:00] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:18:26] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:19:38] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:19:57] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:21:29] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:22:38] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:22:51] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:23:00] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:24:32] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:24:57] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:25:04] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:25:42] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:26:05] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:27:05] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:27:19] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:29:54] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:30:04] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:30:59] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:39:41] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:43:38] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:47:14] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:48:07] [WARNING]: O e-mail teste@teste.teste tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:48:15] [WARNING]: O e-mail teste@teste.teste tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:48:21] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 01:48:38] [WARNING]: O e-mail teste@teste.teste tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:48:46] [WARNING]: O e-mail kadu.rocha2@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:50:00] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:50:05] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:50:13] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 01:53:51] [WARNING]: O e-mail ook tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 13:45:53] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 13:56:41] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação
+[2018-11-02 14:01:51] [WARNING]: O e-mail kadu.rocha@gmail.com tentou realizar o login na aplicação - E-mail ou senha incorretos.
+[2018-11-02 14:01:57] [INFO]: O usuário (ID: 1) acabou de realizar o login na aplicação

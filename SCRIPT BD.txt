@@ -1,0 +1,131 @@
+DROP TABLE Contrato;
+DROP TABLE Rota;
+DROP TABLE Universidade;
+DROP TABLE Veiculo;
+DROP TABLE Motorista;
+DROP TABLE Passageiro;
+DROP TABLE Mensagem;
+DROP TABLE Empresa;
+DROP TABLE Usuario;
+
+CREATE TABLE Usuario (
+	us_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	us_email VARCHAR(30) NOT NULL,
+	us_senha VARCHAR(30) NOT NULL,
+	us_tipo CHAR NOT NULL,
+	UNIQUE(us_email)
+);
+
+CREATE TABLE Empresa (
+	emp_inscricao_estadual VARCHAR(50) NOT NULL,
+	emp_telefone VARCHAR(50) NOT NULL,
+	emp_nome_fantasia VARCHAR(100) NOT NULL,
+	emp_id INT NOT NULL AUTO_INCREMENT,
+	emp_razao_social VARCHAR(100) NOT NULL,
+	emp_cnpj VARCHAR(30) NOT NULL,
+	emp_status_solicitacao CHAR (1),
+	us_id INT NOT NULL,
+	PRIMARY KEY(emp_id,emp_cnpj),
+	FOREIGN KEY(us_id) REFERENCES Usuario (us_id),
+	UNIQUE(emp_inscricao_estadual, emp_nome_fantasia, emp_razao_social, emp_cnpj)
+);
+
+CREATE TABLE Passageiro (
+	psg_id INT NOT NULL AUTO_INCREMENT,
+	us_id INT NOT NULL,
+	nome VARCHAR(50) NOT NULL,
+	cpf VARCHAR (20) NOT NULL,
+	endereco VARCHAR (30) NOT NULL,
+	cidade VARCHAR (30) NOT NULL,
+	numeroEnd VARCHAR (10) NOT NULL,
+	cep VARCHAR (10) NOT NULL,
+	estado VARCHAR (10) NOT NULL,
+	sexo VARCHAR (5) NOT NULL,
+	telefone VARCHAR (20) NOT NULL,
+	FOREIGN KEY(us_id) REFERENCES Usuario (us_id),
+	PRIMARY KEY(psg_id)
+);
+
+CREATE TABLE Motorista (
+	mot_id INT NOT NULL AUTO_INCREMENT,
+	mot_nome VARCHAR(100) NOT NULL,
+	mot_sobrenome VARCHAR(100) NOT NULL,
+	mot_nasc VARCHAR(10) NOT NULL,
+	mot_cpf VARCHAR(15) NOT NULL,
+	mot_reg VARCHAR(11) NOT NULL,
+	mot_cartipo VARCHAR(1) NOT NULL,
+	mot_validade VARCHAR(10) NOT NULL,
+	mot_sexo CHAR NOT NULL,
+	mot_telefone VARCHAR(30) NOT NULL,
+	mot_email VARCHAR(100) NOT NULL,
+	emp_id INT NOT NULL,
+	PRIMARY KEY(mot_id),
+	FOREIGN KEY(emp_id) REFERENCES Empresa (emp_id),
+	UNIQUE(mot_nome)
+);
+
+CREATE TABLE Mensagem (
+	msg_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	emp_id INT NOT NULL,
+	msg_text VARCHAR(500),
+	titulo VARCHAR (50),
+	FOREIGN KEY(emp_id) REFERENCES Empresa (emp_id)
+);
+
+CREATE TABLE Veiculo (
+	vei_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	emp_id INT NOT NULL,
+	vei_nome VARCHAR(30) NOT NULL,
+	vei_marca VARCHAR(30) NOT NULL,
+	vei_ano_modelo VARCHAR(10) NOT NULL,
+	vei_placa VARCHAR(30) NOT NULL,
+	FOREIGN KEY(emp_id) REFERENCES Empresa (emp_id),
+	UNIQUE(vei_placa)
+);
+
+CREATE TABLE Universidade (
+	uni_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	uni_nome VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Rota(
+	rot_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	vei_id INT NOT NULL,
+	mot_id INT NOT NULL,
+	emp_id INT NOT NULL,
+	uni_id INT NOT NULL,
+	rot_qtdLugar INT NOT NULL,
+	rot_qtdLivre INT NOT NULL,
+	rot_preco VARCHAR(50) NOT NULL,
+	rot_turno char NOT NULL,
+	rot_nome VARCHAR(50) NOT NULL,
+	ponto0 VARCHAR(100) NOT NULL,
+	ponto1 VARCHAR(100) NOT NULL,
+	ponto2 VARCHAR(100) NOT NULL,
+	ponto3 VARCHAR(100) NOT NULL,
+	ponto4 VARCHAR(100) NOT NULL,
+	ponto5 VARCHAR(100) NOT NULL,
+	FOREIGN KEY(vei_id) REFERENCES Veiculo (vei_id),
+	FOREIGN KEY(mot_id) REFERENCES Motorista (mot_id),
+	FOREIGN KEY(emp_id) REFERENCES Empresa (emp_id),
+	FOREIGN KEY(uni_id) REFERENCES Universidade (uni_id)	
+);
+
+CREATE TABLE Contrato (
+	cont_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	rot_id INT NOT NULL,
+	psg_id INT NOT NULL,
+	emp_id INT NOT NULL,
+	FOREIGN KEY(rot_id) REFERENCES Rota (rot_id),
+	FOREIGN KEY(psg_id) REFERENCES Passageiro (psg_id),
+	FOREIGN KEY(emp_id) REFERENCES Empresa (emp_id)
+);
+
+INSERT INTO `universidade` (`uni_id`, `uni_nome`) VALUES (NULL, 'ANHANGUERA'), 
+(NULL, 'ESAMC'), (NULL, 'FACAMP'), (NULL, 'IESCAMP'), 
+(NULL, 'IPEP'), (NULL, 'METROCAMP'), (NULL, 'POLICAMP'), 
+(NULL, 'PUC-CAMPINAS'), (NULL, 'SLMANDIC'), (NULL, 'UNICAMP'), 
+(NULL, 'UNIP'), (NULL, 'UNISAL'), (NULL, 'USF');
+
+INSERT INTO `Usuario` (`us_id`, `us_email`, `us_senha`, `us_tipo`) 
+VALUES (NULL, 'adminHerevan@herevan.com', '123456', 'A');
